@@ -5,5 +5,7 @@ export const store = configureStore({
 	reducer: {
 		movieList: movieListReducer
 	},
-	devTools: import.meta.env.MODE !== 'production' // Habilita Redux DevTools en modo de desarrollo
+	devTools: true
 })
+
+// import.meta.env.MODE !== 'production' // Habilita Redux DevTools en modo de desarrollo

@@ -6,10 +6,13 @@ export const withMainEventListeners = Component => {
 	return props => {
 		useEffect(() => {
 			// eslint-disable-next-line react/prop-types
-			const lang = props?.lang ?? i18n.language
+			const lang = props?.lang
+
 			const eventLangChange = ({ detail }) => i18n.changeLanguage(detail.lang)
 			window.addEventListener('eventLangChange', eventLangChange)
-			i18n.changeLanguage(lang).then()
+			if (lang && lang !== i18n.language) {
+				i18n.changeLanguage(lang).then()
+			}
 
 			return () => {
 				window.removeEventListener('eventLangChange', eventLangChange)

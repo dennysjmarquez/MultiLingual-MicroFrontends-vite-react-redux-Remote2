@@ -38,7 +38,7 @@ const MovieListComponent = () => {
 		}
 	}, []) // Pasar un array vacío para que se ejecute solo una vez
 
-	if (!detailsSerie) return null
+	if (!detailsSerie?.serie) return null
 
 	const { image, description, serie, year, genre, score, cast } = detailsSerie
 
@@ -50,7 +50,6 @@ const MovieListComponent = () => {
 						<p>{t('components_series:promotion.text1')}</p>
 						<p>{t('components_series:promotion.text2')}</p>
 					</div>
-
 					<div className="card__block1">
 						<img className="block1__image" src={image} alt={serie} />
 						<div className="block1__details">
