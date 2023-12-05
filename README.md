@@ -1,6 +1,6 @@
 # Proyecto Remoto 2/2 - MultiLingual MicroFrontends con Vite, React y Redux
 
-Este es un proyecto remoto que se integra con el proyecto host principal [https://github.com/dennysjmarquez/MultiLingual-MicroFrontends-vite-react-redux-Host](https://github.com/dennysjmarquez/MultiLingual-MicroFrontends-vite-react-redux-Host)
+Este es un proyecto remoto que se integra con el proyecto host principal [https://github.com/dennysjmarquez/MultiLingual-MicroFrontends-vite-react-redux-Host](https://github.com/dennysjmarquez/MultiLingual-MicroFrontends-vite-react-redux-Host), **para una documentación detallada, consulte el proyecto principal.**
 
 Este proyecto expone un componente que muestra información sobre la serie **[Harry Potter]** y sus actores principales.
 Este componente se integra con el proyecto host a través de la Federación de Módulos.
